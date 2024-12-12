@@ -1,5 +1,4 @@
 import React from "react";
-import { Interweave } from "interweave";
 
 import { cn } from "@/utils/classnames";
 import { TextWeight } from "./enums";
@@ -25,19 +24,17 @@ const Text: React.FC<TextProps> = ({
   size = Size.MD,
   weight = TextWeight.REGULAR,
   className,
-  tagName = "p",
-  renderAsRichText = false,
+  Component = "p",
   color,
   ...rest
 }) => {
-  const Component = renderAsRichText ? Interweave : tagName;
-
   return (
     <Component
       className={cn(weightClasses[weight], sizeClasses[size], className)}
-      {...(renderAsRichText ? { content: children, tagName } : { children })}
       {...rest}
-    />
+    >
+      {children}
+    </Component>
   );
 };
 
