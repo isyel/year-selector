@@ -2,11 +2,11 @@
   "author": "Isyel",
   "license": "MIT",
   "name": "year-selector",
-  "private": true,
   "version": "0.0.1",
+  "type": "module",
   "description": "Select a year in the past or future",
   "main": "dist/index.js",
-  "type": "module",
+  "types": "dist/libe/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/isyel/year-selector.git"
