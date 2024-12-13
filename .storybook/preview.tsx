@@ -1,7 +1,7 @@
+import React from "react";
 import type { Preview, StoryFn } from "@storybook/react";
 
 import "../lib/assets/index.css";
-import React from "react";
 import Layout from "./layout";
 import DocsContainer from "./containers/Docs";
 
