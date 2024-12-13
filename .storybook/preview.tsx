@@ -1,6 +1,6 @@
 import type { Preview, StoryFn } from "@storybook/react";
 
-import "../src/assets/index.scss";
+import "../lib/assets/index.css";
 import React from "react";
 import Layout from "./layout";
 import DocsContainer from "./containers/Docs";
