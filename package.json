@@ -23,7 +23,9 @@
     "@radix-ui/themes": "^3.1.6",
     "iconsax-react": "^0.0.8",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-lib-inject-css": "^2.1.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
