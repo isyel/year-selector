@@ -6,7 +6,11 @@
   "type": "module",
   "description": "Select a year in the past or future",
   "main": "dist/index.js",
-  "types": "dist/libe/index.d.ts",
+  "types": "dist/lib/index.d.ts",
+  "files": [
+    "dist",
+    "tailwind.config.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/isyel/year-selector.git"
