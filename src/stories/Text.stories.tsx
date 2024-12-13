@@ -1,7 +1,5 @@
-import Text from "@/components/Text";
-import { TextWeight } from "@/components/Text/enums";
-import { Size } from "@/enums/size.enum";
 import { Meta, type StoryObj } from "@storybook/react";
+import { Size, Text, TextWeight } from "../../lib";
 
 const meta = {
   title: "Components/Text",

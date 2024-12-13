@@ -1,9 +1,7 @@
-import React from "react";
 import { Meta, StoryContext, StoryFn, type StoryObj } from "@storybook/react";
-import { ButtonVariant } from "@/components/Button/enums";
-import { Color } from "@/enums/color.enum";
-import Button from "@/components/Button";
+
 import { Add } from "iconsax-react";
+import { Button, ButtonVariant, Color } from "../../lib";
 
 const meta = {
   title: "Components/Button",

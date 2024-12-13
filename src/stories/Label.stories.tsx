@@ -1,8 +1,6 @@
-import Label from "@/components/Label";
-import { Color } from "@/enums/color.enum";
 import { Meta, type StoryObj } from "@storybook/react";
 import { NoteSquare } from "iconsax-react";
-import React from "react";
+import { Color, Label } from "../../lib";
 
 const meta = {
   title: "Components/Label",

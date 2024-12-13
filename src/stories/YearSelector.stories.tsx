@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, type StoryObj } from "@storybook/react";
-import { YearSelectorProps } from "@/components/YearSelector/interfaces";
-import YearSelector from "@/components/YearSelector";
+import { YearSelector } from "../../lib";
+import { YearSelectorProps } from "../../lib/components/YearSelector/interfaces";
 
 const StoryComponent: React.FC<YearSelectorProps> = (
   props: YearSelectorProps
