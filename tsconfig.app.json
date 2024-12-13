@@ -21,16 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/enums/*": ["src/enums/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/assets/*": ["src/assets/*"],
-      "@/context/*": ["src/context/*"]
-    }
   },
-  "include": ["src"]
+  "include": ["src", "lib/components"]
 }
