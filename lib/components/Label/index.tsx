@@ -1,12 +1,12 @@
 import React from "react";
+import { InfoCircle } from "iconsax-react";
 
 import Text from "../Text";
-import { cn } from "@/utils/classnames";
 import { LabelProps } from "./interfaces";
-import { Size } from "@/enums/size.enum";
 import Tooltip from "../Tooltip";
-import { InfoCircle } from "iconsax-react";
-import { Color } from "@/enums/color.enum";
+import { Color } from "../../enums/color.enum";
+import { Size } from "../../enums/size.enum";
+import { cn } from "../../../src/utils/classnames";
 
 const colorClasses = {
   [Color.ACCENT]: "text-accent-3",

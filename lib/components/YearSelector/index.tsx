@@ -1,12 +1,13 @@
 import * as PopoverPrimitive from "@radix-ui/react-popover";
 import React from "react";
+
 import { YearSelectorProps } from "./interfaces";
-import { cn } from "@/utils/classnames";
 import Text from "../Text";
 import Label from "../Label";
-import { Size } from "@/enums/size.enum";
 import Button from "../Button";
 import { ButtonVariant } from "../Button/enums";
+import { cn } from "../../../src/utils/classnames";
+import { Size } from "../../enums/size.enum";
 
 const YearSelector: React.FC<YearSelectorProps> = ({
   sideOffset = 5,

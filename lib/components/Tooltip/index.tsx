@@ -4,7 +4,7 @@ import * as React from "react";
 import Text from "../Text";
 import { TooltipSide } from "./enums";
 import { TooltipProps } from "./interfaces";
-import { Size } from "@/enums/size.enum";
+import { Size } from "../../enums/size.enum";
 
 /* check z-index again once we have migrated other components that have very high z-index */
 const Tooltip: React.FC<TooltipProps> = ({

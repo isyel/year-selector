@@ -1,6 +1,7 @@
 import React from "react";
+
 import { ButtonVariant } from "./enums";
-import { Color } from "@/enums/color.enum";
+import { Color } from "../../enums/color.enum";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;

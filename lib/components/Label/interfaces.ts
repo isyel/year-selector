@@ -1,6 +1,7 @@
-import { Color } from "@/enums/color.enum";
-import { Size } from "@/enums/size.enum";
 import React from "react";
+
+import { Color } from "../../enums/color.enum";
+import { Size } from "../../enums/size.enum";
 
 interface LabelBaseProps {
   label?: string;

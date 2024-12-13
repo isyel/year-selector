@@ -4,7 +4,7 @@ import { Color } from "../../enums/color.enum";
 import Text from "../Text";
 import { ButtonVariant } from "./enums";
 import { ButtonProps } from "./interfaces";
-import { cn } from "@/utils/classnames";
+import { cn } from "../../../src/utils/classnames";
 
 const Button: React.ForwardRefExoticComponent<ButtonProps> = React.forwardRef<
   HTMLButtonElement,

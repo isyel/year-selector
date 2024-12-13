@@ -1,9 +1,9 @@
 import React from "react";
 
-import { cn } from "@/utils/classnames";
 import { TextWeight } from "./enums";
 import { TextProps } from "./interfaces";
-import { Size } from "@/enums/size.enum";
+import { Size } from "../../enums/size.enum";
+import { cn } from "../../../src/utils/classnames";
 
 const weightClasses = {
   [TextWeight.REGULAR]: "font-normal",

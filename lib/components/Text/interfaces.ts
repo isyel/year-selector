@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Size } from "@/enums/size.enum";
 import { TextWeight } from "./enums";
-import { Color } from "@/enums/color.enum";
+import { Color } from "../../enums/color.enum";
+import { Size } from "../../enums/size.enum";
 
 interface TextProps {
   size?: Exclude<Size, Size.XXXL | Size.XXXXL | Size.XXXXXL>;
