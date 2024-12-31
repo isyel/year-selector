@@ -1,24 +1,13 @@
 {
-  "author": "Isyel",
-  "license": "MIT",
-  "private": false,
   "name": "year-selector",
   "version": "0.0.3",
+  "author": "Isyel",
   "type": "module",
-  "description": "Select a year in the past or future",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "description": "Select a year in the past or future",
   "types": "dist/lib/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "files": [
     "dist",
-    "lib",
     "tailwind.config.js"
   ],
   "publishConfig": {
