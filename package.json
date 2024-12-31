@@ -3,7 +3,7 @@
   "license": "MIT",
   "private": false,
   "name": "year-selector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Select a year in the past or future",
   "main": "dist/index.js",
