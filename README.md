@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# React Year Selector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+A minimal library to select a year without selecting month or day [Storybook preview](https://storybook-mentalyc.vercel.app/?path=/docs/components-yearselector--docs).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> The latest version is not yet finalised and is subject to change, open an issue if you come across a problem in usage
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```shell
+npm i year-selector
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Basic usage
 
 ```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+import { YearSelector } from "year-selector";
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+<YearSelector
+  label="Year of birth"
+  placeholder="YYYY"
+  contentClasses="max-w-[90vw] p-4 md:grid-cols-5 lg:grid-cols-6"
+  fromYear={1993}
+  toYear={2024}
+  value={value?.toString()}
+  onChange={onChange}
+/>;
 ```
+
+## Limitations
+
+- If no `toYear` is passed, uses current year as `toYear`
+- If no `fromYear` is passed uses `1900`
+
+## Tested Browsers
+
+[chrome]: https://github.com/alrra/browser-logos/raw/master/src/chrome/chrome_64x64.png
+[opera]: https://github.com/alrra/browser-logos/raw/master/src/opera/opera_64x64.png
+[edge_12-18]: https://github.com/alrra/browser-logos/raw/master/src/archive/edge_12-18/edge_12-18_64x64.png
+[edge]: https://github.com/alrra/browser-logos/raw/master/src/edge/edge_64x64.png
